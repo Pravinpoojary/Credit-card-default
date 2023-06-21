@@ -1,4 +1,8 @@
 pandas
 flask
 numpy
--e .
+seaborn
+scikit-learn
+xgboost
+#pandas-profiling
+#-e .
