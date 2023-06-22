@@ -2,7 +2,7 @@ import sys
 from src.logger import logging
 
 
-def erro_msg_det(error,error_det:sys):
+def error_msg_det(error,error_det:sys):
     _,_,exc_tb = error_det.exc_info() # this will display 3 variables , but we need only one, hence_,_, is mentoned
     file_name=exc_tb.tb_frame.f_code.co_filename
 
