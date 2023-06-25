@@ -34,3 +34,15 @@ def model_evaluation(x_train,x_test,y_train,y_test,models):
         
     return performance
 
+
+def load_object(pickle_path):
+    try:
+        with open(pickle_path,"rb") as file_obj:
+            return pickle.load(file_obj)
+
+    except Exception as e:
+        logging.info("error uccured during loading pickle file")
+        raise CustomException(e,sys)
+    
+
+
