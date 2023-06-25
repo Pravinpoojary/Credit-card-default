@@ -17,6 +17,7 @@ from dataclasses import dataclass
 
 class Data_Ingestion:
     def __init__(self):
+        # self.ingestion_config=Data_Ingestion_Config()
         self.train_path=os.path.join("artifacts","train.csv")
         self.test_path=os.path.join("artifacts","test.csv")
         self.raw_path=os.path.join("artifacts","raw.csv")
